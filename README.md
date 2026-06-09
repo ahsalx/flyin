@@ -111,32 +111,34 @@ The colors are implemented using ANSI escape codes.
 
 All mandatory benchmark targets are passed.
 
-| Map | Turns | Target | Status |
+| Map | Turns | Target |
 |---|---:|---:|---|
-| 01_linear_path.txt | 4 | <= 6 | PASS |
-| 02_simple_fork.txt | 6 | <= 8 | PASS |
-| 03_basic_capacity.txt | 4 | <= 6 | PASS |
-| 01_dead_end_trap.txt | 8 | <= 12 | PASS |
-| 02_circular_loop.txt | 15 | <= 15 | PASS |
-| 03_priority_puzzle.txt | 8 | <= 12 | PASS |
-| 01_maze_nightmare.txt | 13 | <= 30 | PASS |
-| 02_capacity_hell.txt | 16 | <= 35 | PASS |
-| 03_ultimate_challenge.txt | 26 | <= 45 | PASS |
-| 01_the_impossible_dream.txt | 67 | 45 reference | SOLVED, OPTIONAL NOT BEATEN |
+| 01_linear_path.txt | 4 | <= 6 |
+| 02_simple_fork.txt | 6 | <= 8 |
+| 03_basic_capacity.txt | 4 | <= 6 |
+| 01_dead_end_trap.txt | 8 | <= 12 |
+| 02_circular_loop.txt | 15 | <= 15 |
+| 03_priority_puzzle.txt | 8 | <= 12 |
+| 01_maze_nightmare.txt | 13 | <= 30 |
+| 02_capacity_hell.txt | 16 | <= 35 |
+| 03_ultimate_challenge.txt | 26 | <= 45 |
+| 01_the_impossible_dream.txt | 67 | 45 reference |
 
-The Challenger map is used as a stress test. My implementation solves it in 67 turns, but does not beat the 45-turn reference record.
+The Challenger map is used as a stress test. My implementation solves it in 67 turns.
 
 ## Resources
 
 Resources used while working on this project:
 
 * ANSI terminal colors: https://student.cs.uwaterloo.ca/~cs452/terminal.html
+* MYPY command line: https://mypy.readthedocs.io/en/stable/command_line.html
 * Dijkstra/pathfinding video resources:
 
   * https://www.youtube.com/watch?v=EFg3u_E6eHU&t=83s
   * https://www.youtube.com/watch?v=71Z-Jpnm3D4&t=2s
   * https://www.youtube.com/watch?v=CmIQ29cUGiE&t=147s
   * https://www.youtube.com/watch?v=OrJ004Wid4o&t=1363s
+  * https://www.youtube.com/shorts/orSFsNhK4XE
 
 ## AI Usage
 
