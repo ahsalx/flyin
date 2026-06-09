@@ -6,7 +6,7 @@
 
 Fly-in is a Python project that simulates a fleet of drones moving through a network of connected zones.
 
-The goal of the project is to move all drones from a start hub to an end hub while respecting the movement rules and constraints as defined in the subject.
+The goal of the project is to move all drones from a start zone to an end zone while respecting the movement rules.
 
 The program:
 
@@ -14,8 +14,7 @@ The program:
 * builds a graph of zones and connections,
 * finds valid paths from the start hub to the end hub,
 * distributes drones across the available paths,
-* simulates the drone movements turn by turn,
-* prints the movements using the required output format.
+* simulates and print the drone movements turn by turn,
 
 Each output line represents one simulation turn. Drones that move during that turn are printed on the same line.
 
@@ -45,7 +44,7 @@ make install
 make run
 ```
 
-The map file used by `make run` can be changed inside the `Makefile`.
+The map file used by `make run` is defined in the `Makefile` and should be changed accordingly.
 
 You can also run the program manually:
 
@@ -57,7 +56,7 @@ python3 main.py map-name.txt
 
 The project uses Dijkstra's algorithm for pathfinding.
 
-Dijkstra is used to find the cheapest path from the start hub to the end hub. Zone types affect the path cost:
+Dijkstra is used to find the cheapest path from start to the end . Zone types affect the path cost:
 
 * normal zones cost 1,
 * priority zones cost 1,
@@ -80,8 +79,6 @@ The start and end zones are special:
 * all drones can begin at the start zone,
 * multiple drones can finish at the end zone.
 
-For restricted zones, movement takes 2 turns.
-
 Example:
 
 ```text
@@ -97,9 +94,9 @@ Turn 2: D1-C
 
 I chose Dijkstra because the graph does not have the same cost for every movement.
 
-A simple BFS is useful when every movement has the same cost. In this project, that is not always true: normal and priority zones cost 1 turn, but restricted zones cost 2 turns. Because of that, the shortest path in number of zones is not always the cheapest path in number of turns.
+A simple BFS is useful when every movement has the same cost. In this case : normal and priority zones cost 1 turn, but restricted zones cost 2 turns. Because of that, the shortest path in number of zones is not always the cheapest path in number of turns.
 
-Dijkstra compares the total movement cost of each possible path, so it is a better fit for this project. It also works well here because all movement costs are positive.
+Dijkstra compares the total movement cost of each possible path, so it is a better fit for this project.
 
 ## Visual Representation
 
@@ -111,7 +108,7 @@ Colors used:
 * restricted zones: red,
 * start and end zones: green.
 
-This helps show important zone types directly in the terminal output and makes the simulation easier to follow during testing and peer evaluation.
+This helps show important zone types directly in the terminal output and makes the simulation easier to follow.
 
 The colors are implemented using ANSI escape codes.
 
@@ -151,4 +148,4 @@ Resources used while working on this project:
 ## AI Usage
 
 The code was created, tested, and adapted manually.
-AI was used as a learning and debugging tool during this project.
+AI was used as a searching, learning and testing tool.
