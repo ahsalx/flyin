@@ -93,6 +93,14 @@ Turn 2: D1-C
 
 `D1-C` means the drone has arrived at `C` on the next turn.
 
+### Why Dijkstra instead of BFS?
+
+I chose Dijkstra because the graph does not have the same cost for every movement.
+
+A simple BFS is useful when every movement has the same cost. In this project, that is not always true: normal and priority zones cost 1 turn, but restricted zones cost 2 turns. Because of that, the shortest path in number of zones is not always the cheapest path in number of turns.
+
+Dijkstra compares the total movement cost of each possible path, so it is a better fit for this project. It also works well here because all movement costs are positive.
+
 ## Visual Representation
 
 The simulation uses colored terminal output to make the movement easier to read.
