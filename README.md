@@ -112,17 +112,17 @@ The colors are implemented using ANSI escape codes.
 All mandatory benchmark targets are passed.
 
 | Map | Turns | Target |
-|---|---:|---:|---|
-| 01_linear_path.txt | 4 | <= 6 |
-| 02_simple_fork.txt | 6 | <= 8 |
-| 03_basic_capacity.txt | 4 | <= 6 |
-| 01_dead_end_trap.txt | 8 | <= 12 |
-| 02_circular_loop.txt | 15 | <= 15 |
-| 03_priority_puzzle.txt | 8 | <= 12 |
-| 01_maze_nightmare.txt | 13 | <= 30 |
-| 02_capacity_hell.txt | 16 | <= 35 |
-| 03_ultimate_challenge.txt | 26 | <= 45 |
-| 01_the_impossible_dream.txt | 67 | 45 reference |
+|---|---:|---:|
+| `01_linear_path.txt` | 4 | ≤ 6 |
+| `02_simple_fork.txt` | 6 | ≤ 8 |
+| `03_basic_capacity.txt` | 4 | ≤ 6 |
+| `01_dead_end_trap.txt` | 8 | ≤ 12 |
+| `02_circular_loop.txt` | 15 | ≤ 15 |
+| `03_priority_puzzle.txt` | 8 | ≤ 12 |
+| `01_maze_nightmare.txt` | 13 | ≤ 30 |
+| `02_capacity_hell.txt` | 16 | ≤ 35 |
+| `03_ultimate_challenge.txt` | 26 | ≤ 45 |
+| `01_the_impossible_dream.txt` | 67 | 45 reference |
 
 The Challenger map is used as a stress test. My implementation solves it in 67 turns.
 
