@@ -134,7 +134,11 @@ The Challenger map is used as a stress test. My implementation solves it in 67 t
 ## Resources
 
 Resources used while working on this project:
-
+* Python’s built-in `pdb` debugger:
+	*https://namastedev.com/blog/debugging-with-pdb-vs-code/
+	*https://www.redhat.com/en/blog/python-debugger-pdb
+* Edge Cases:
+	https://github.com/ahsalx/flyin/blob/main/fly_in_edge-cases.zip
 * ANSI terminal colors: https://student.cs.uwaterloo.ca/~cs452/terminal.html
 * MYPY command line: https://mypy.readthedocs.io/en/stable/command_line.html
 * Dijkstra/pathfinding video resources:
